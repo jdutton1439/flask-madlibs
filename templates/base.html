@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="/static/css/styles.css">
+    </head>
+    <body>
+        <navbar>
+            {% block navs %}{% endblock %}
+        </navbar>
+
+        <h1><i>MADLIBS!</i></h1>
+
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

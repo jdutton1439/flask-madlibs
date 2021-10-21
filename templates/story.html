@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}MADLIBS - Story Form{% endblock %}
+
+{% block navs %}
+    <a href="/">Home</a>
+    <a href="/story">New Story</a>
+{% endblock %}
+
+{% block content %}
+    <form action="/results">
+        {% for prompt in prompts %}
+            <p>{{ prompt }}:
+                <input name="{{ prompt }}">
+            </p>
+        {% endfor %}
+        <button>Submit</button>
+    </form>
+{% endblock %}

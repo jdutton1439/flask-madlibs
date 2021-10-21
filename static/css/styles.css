@@ -1,0 +1,35 @@
+body {
+    margin: auto;
+    padding: 0;
+
+    background: gray;
+    color: antiquewhite;
+}
+
+navbar {
+    width: 100%;
+    border-color: black;
+    border-style: none none ridge none;
+}
+
+navbar > a {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+a:hover {
+    color: white;
+}
+
+a {
+    color: antiquewhite;
+}
+
+h1 {
+    padding: 1rem;
+}
+
+form {
+    background-color: black;
+    color: white;
+}
